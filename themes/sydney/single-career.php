@@ -24,12 +24,7 @@ get_header(); ?>
 
 			<?php sydney_post_navigation(); ?>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+		<a href="<?php the_permalink(); ?>"><button type="button" class="btn btn-success">Apply Now!</button></a>
 
 		<?php endwhile; // end of the loop. ?>
 

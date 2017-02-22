@@ -63,7 +63,7 @@
 			<img class="header-inner" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>">
 		</div>
 		<?php sydney_header_video(); ?>
-
+		
 		<?php do_action('sydney_inside_hero'); ?>
 	</div>
 

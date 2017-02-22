@@ -258,6 +258,7 @@ function sydney_header_video() {
 	if ( ( get_theme_mod('front_header_type') == 'core-video' && is_front_page() || get_theme_mod('site_header_type') == 'core-video' && !is_front_page() ) ) {
 		the_custom_header_markup();
 	}
+	
 }
 
 /**

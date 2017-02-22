@@ -30,6 +30,12 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
+<style>
+.footer-widgets{
+    padding-top: 10px;
+    padding-bottom: 10px;
 
+}
+</style>
 </body>
 </html>

@@ -48,6 +48,7 @@ function sydney_video_settings( $settings ) {
 	$settings['minHeight'] 		= '100';	
 	
 	return $settings;
+
 }
 add_filter( 'header_video_settings', 'sydney_video_settings' );
 

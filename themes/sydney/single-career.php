@@ -4,8 +4,9 @@
  *
  * @package Sydney
  */
+ get_header('career');
 
-get_header(); ?>
+?>
 <style>
 .panel, .panel-group .panel-heading+.panel-collapse>.panel-body{
     border: none;
@@ -15,6 +16,8 @@ get_header(); ?>
       min-height: 100px;
       background-color: white;
       border-radius: 0px;
+
+  }
 
     }
 </style>
@@ -31,29 +34,24 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
+			<div style="width:55%;padding:0 10pt 0 0;float:left;">
+				<?php get_template_part( 'content', 'single' ); ?>
+					<?php sydney_post_navigation(); ?>
+			</div>
 
-			<?php sydney_post_navigation(); ?>
-
-		<div class="section">
+			<div class="section" style="width:40%;padding:0 10pt 0 0;float:right;">
 					<div class="container">
 						<!-- Collapse -->
-							<div class="panel-group" id="accordion">
-									<div class="panel-heading">
-											<button style="margin-bottom: 20px;" type="button" class="btn btn-success" data-toggle="collapse" data-target="#collapse-1" data-parent="#Accordion">Apply Now
-											</button>
-									</div>
-									<div id="collapse-1" class="collapse">
-										<div class="panel-body">
-											 <?php echo do_shortcode( '[contact-form-7 id="203" title="Application Form"] '); ?>
-										</div>
-									</div>
-								</div>
-							</div>
-						<!--end Collapse-->
-					</div>
-				</div>
+							<h4 class="panel-title" style="text-align: left">APPLY NOW!</h4>
 
+							<div class="panel-body" style="float: left">
+								 <?php echo do_shortcode( '[contact-form-7 id="203" title="Application Form"] '); ?>
+							</div>
+					</div>
+			</div>
+	</div>
+			<div style=”clear:both;”></div>
+					<!--end Collapse-->
 		<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->

@@ -6,7 +6,14 @@
  *
  * @package Sydney
  */
-?><!DOCTYPE html>
+?>
+<style>
+  .page-id-191 .header-image {
+   background-image: url('/images/2.jpg');
+   display: block;
+}
+</style>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
